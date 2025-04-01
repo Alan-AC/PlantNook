@@ -1,6 +1,5 @@
 function toggleCategory(categoryId) {
     // Ocultar todas las categorías
-    var categories = document.querySelectorAll('.category');
     var categoryDiv = document.querySelectorAll('.categories');
     categories.forEach(function(category) {
         category.style.display = 'none';
