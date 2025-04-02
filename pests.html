@@ -16,13 +16,46 @@
         <li onclick="window.location.href='follow-up.html'">Seguimiento</li>
     </ul>
 
-    <ul>
-        <li onclick="">cat1</li>
-        <li onclick="">cat2</li>
-        <li onclick="">cat3</li>
-        <li onclick="">cat4</li>
-        <li onclick="">cat5</li>
-        <li onclick="">cat6</li>
-    </ul>
+    <div class="categories"></div>
+        <ul>
+            <li onclick="toggleCategory('cat1')">cat1</li>
+            <li onclick="toggleCategory('cat2')">cat2</li>
+            <li onclick="toggleCategory('cat3')">cat3</li>
+            <li onclick="toggleCategory('cat4')">cat4</li>
+            <li onclick="toggleCategory('cat5')">cat5</li>
+            <li onclick="toggleCategory('cat6')">cat6</li>
+        </ul>
+    </div>
+
+    <div id="cat1" class="category" style="display: none;">
+        <h2>Cat 1</h2>
+        <p>Contenido de Cat 1</p>
+        <button onclick="goBack('cat1')">Atrás</button>
+    </div>
+    <div id="cat2" class="category" style="display: none;">
+        <h2>Cat 2</h2>
+        <p>Contenido de Cat 2</p>
+        <button onclick="goBack('cat2')">Atrás</button>
+    </div>
+    <div id="cat3" class="category" style="display: none;">
+        <h2>Cat 3</h2>
+        <p>Contenido de Cat 3</p>
+        <button onclick="goBack('cat3')">Atrás</button>
+    </div>
+    <div id="cat4" class="category" style="display: none;">
+        <h2>Cat 4</h2>
+        <p>Contenido de Cat 4</p>
+        <button onclick="goBack('cat4')">Atrás</button>
+    </div>
+    <div id="cat5" class="category" style="display: none;">
+        <h2>Cat 5</h2>
+        <p>Contenido de Cat 5</p>
+        <button onclick="goBack('cat5')">Atrás</button>
+    </div>
+    <div id="cat6" class="category" style="display: none;">
+        <h2>Cat 6</h2>
+        <p>Contenido de Cat 6</p>
+        <button onclick="goBack('cat6')">Atrás</button>
+    </div>
 </body>
 </html>
