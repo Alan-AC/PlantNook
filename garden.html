@@ -15,10 +15,28 @@
         <li onclick="window.location.href='profile.html'">Perfil</li>
         <li onclick="window.location.href='follow-up.html'">Seguimiento</li>
     </ul>
+    <div class="categories">
+        <ul>
+            <li onclick="toggleCategory('int')">Interior</li>
+            <li onclick="toggleCategory('ext')">Exterior</li>
+        </ul>
+    </div>
 
-    <ul>
-        <li onclick="">Interior</li>
-        <li onclick="">Exterior</li>
-    </ul>
+    <div class="plants" id="int" style="display: none;">
+        <p>Sustituir el interior de este div según el contenido de la base de datos</p>
+        <p onclick="showData()">Planta interior 1</p>
+        <p onclick="showData()">Planta interior 2</p>
+    </div>
+
+    <div class="plants" id="ext" style="display: none;">
+        <p>Sustituir el interior de este div según el contenido de la base de datos</p>
+        <p onclick="showData()">Planta exterior 1</p>
+        <p onclick="showData()">Planta exterior 2</p>
+    </div>
+
+    <div id="divData" style="display: none;">
+        <p>Datos de la planta (Obtenerlos desde la base de datos y sustituir el contenido del div)</p>
+        <p id="selectedPlant"></p>
+    </div>
 </body>
 </html>
