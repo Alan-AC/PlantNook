@@ -26,6 +26,12 @@ function showData(pId) {
     var plantName = document.getElementById(pId).textContent;
     document.getElementById('selectedPlant').innerHTML = '<p>' + plantName + '</p>';
     document.getElementById('ext-int').innerHTML = '<p>' + pId + '</p>';
+
+    if(pId.includes('ext')){
+        document.getElementById('ext').style.display = 'none';
+    } else {
+        document.getElementById('int').style.display = 'none';
+    }
 }
 
 function goBack1() {
