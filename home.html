@@ -17,10 +17,20 @@
     </ul>
 
     <ul>
-        <li>P_Destacada</li>
-        <li>PE_Destacada</li>
+        <li id="P_Destacada" onclick="showModal('plant')">P_Destacada</li>
+        <li id="PE_Destacada" onclick="showModal('plague')">PE_Destacada</li>
         <li>Recordatorios Riego</li>
         <li>Recordatorios Fertil</li>
     </ul>
+
+    <div id="planta_destacada_modal" style="display: none;">
+        <p>esto es un modal con los datos de la planta</p>
+        <button onclick="goBack()">Atrás</button>
+    </div>
+
+    <div id="plaga_destacada_modal" style="display: none;">
+        <p>esto es un modal con los datos de la plaga</p>
+        <button onclick="goBack()">Atrás</button>
+    </div>
 </body>
 </html>
