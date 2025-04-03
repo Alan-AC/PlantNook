@@ -25,21 +25,23 @@
 
     <div class="plants" id="int" style="display: none;">
         <p>Sustituir el interior de este div según el contenido de la base de datos</p>
-        <p onclick="showData()">Planta interior 1</p>
-        <p onclick="showData()">Planta interior 2</p>
+        <p id="int1" onclick="showData(int1)">Planta interior 1</p>
+        <p id="int2" onclick="showData(int2)">Planta interior 2</p>
         <button onclick="goBack('int')">Atrás</button>
     </div>
 
     <div class="plants" id="ext" style="display: none;">
         <p>Sustituir el interior de este div según el contenido de la base de datos</p>
-        <p onclick="showData()">Planta exterior 1</p>
-        <p onclick="showData()">Planta exterior 2</p>
+        <p id="ext1" onclick="showData(ext1)">Planta exterior 1</p>
+        <p id="ext2" onclick="showData(ext2)">Planta exterior 2</p>
         <button onclick="goBack('ext')">Atrás</button>
     </div>
 
     <div id="divData" style="display: none;">
         <p>Datos de la planta (Obtenerlos desde la base de datos y sustituir el contenido del div)</p>
-        <p id="selectedPlant"></p>
+        <p hidden id="ext-int"></p>
+        <div id="selectedPlant"></div>
+        <button onclick="goBack1()">Atrás</button>
     </div>
 </body>
 </html>
