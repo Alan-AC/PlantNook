@@ -1,0 +1,20 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    justify-content: space-evenly; 
+    background-color: #bffcb9;
+}
+
+.menu li {
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.menu li:hover {
+    background-color: #ddfeda; 
+    text-decoration: underline; 
+}
